@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity with Fatima</title>
+  <style>
+    body {
+      font-family: "Press Start 2P", cursive; /* Pixel-style font */
+      background-color: #ffe6f2;
+      background-image: 
+        linear-gradient(45deg, #ffcce6 25%, transparent 25%),
+        linear-gradient(-45deg, #ffcce6 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ffcce6 75%),
+        linear-gradient(-45deg, transparent 75%, #ffcce6 75%);
+      background-size: 40px 40px;
+      background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff99cc;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 4px solid #cc6699;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      background-color: #ffb3d9;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 14px;
+    }
+    nav a:hover {
+      color: #cc0066;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      margin: 20px auto;
+      max-width: 600px;
+      background: #fff0f5;
+      border: 2px dashed #ff99cc;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #ff99cc;
+      text-align: center;
+      padding: 15px;
+      border-top: 4px solid #cc6699;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    button {
+      background-color: #ff66b2;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-family: "Press Start 2P", cursive;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #cc0066;
+    }
+    .thankyou {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #cc0066;
+    }
+  </style>
+  <!-- Pixel-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🔐 Cybersecurity with Fatima</h1>
+    <p>Making passwords strong, funny, and fabulous!</p>
+  </header>
+
+  <nav>
+    <a href="#intro">About Me</a>
+    <a href="#tips">Password Tips</a>
+    <a href="#fun">Interactive Fun</a>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h2>👩 About Fatima</h2>
+      <p>Hello! I’m Fatima, your friendly cybersecurity guide. I believe that protecting yourself online doesn’t have to be boring—it can be pink, pixelated, and sprinkled with humor. Let’s make hacking attempts cry in 8-bit style!</p>
+    </section>
+
+    <section id="tips">
+      <h2>💡 Password Wisdom</h2>
+      <p>Strong passwords are like strong coffee—essential for survival. Here are some quick tips:</p>
+      <ul style="text-align:left; max-width:500px; margin:auto;">
+        <li>Mix uppercase, lowercase, numbers, and symbols (yes, even that weird % sign).</li>
+        <li>Make it long—short passwords are like short naps, useless.</li>
+        <li>Don’t reuse the same password everywhere. Hackers love copy-paste victims.</li>
+        <li><b>Never store your passwords on NoteIt or sticky notes.</b> That’s like hiding candy under your pillow and expecting siblings not to find it.</li>
+        <li>Use a password manager—it’s like a digital diary, but less embarrassing.</li>
+      </ul>
+    </section>
+
+    <section id="fun">
+      <h2>🎮 Interactive Fun</h2>
+      <p>Click the button below to get a random “Strong Password Idea” (don’t worry, it’s silly but safe):</p>
+      <button onclick="generatePassword()">Generate Password</button>
+      <p id="passwordDisplay" style="margin-top:15px; font-weight:bold; color:#cc0066;"></p>
+    </section>
+
+    <p class="thankyou">💖 Thank you for checking out my blog 💖</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Fatima’s Cybersecurity Corner</p>
+  </footer>
+
+  <script>
+    function generatePassword() {
+      const ideas = [
+        "UnicornsEat$Cyber!Pizza42",
+        "PinkPixel!Dragon_2026",
+        "ILoveCyberCats#Secure99",
+        "PasswordManagers>NoteIt123",
+        "GlitterBomb$HackProof77"
+      ];
+      const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
+      document.getElementById("passwordDisplay").innerText = randomIdea;
+    }
+  </script>
+</body>
+</html>
